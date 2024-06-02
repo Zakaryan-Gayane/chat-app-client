@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO Chat</title>
+    <style>
+        ul { list-style-type: none; margin: 0; padding: 0; }
+        li { padding: 8px; }
+        input { padding: 8px; margin-right: 8px; }
+        button { padding: 8px; }
+    </style>
+</head>
+<body>
+    <form id="form" action="">
+        <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+    <ul id="messages"></ul>
+    <h2>Users</h2>
+    <ul id="users"></ul>
+    <h2>Rooms</h2>
+    <ul id="rooms"></ul>
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script type="module" src="./index.ts"></script>
+</body>
+</html>
